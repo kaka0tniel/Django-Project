@@ -1,0 +1,1445 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<link rel="manifest" href="/webapp-manifest.json" />
+
+	<script>
+		// if ('serviceWorker' in navigator) {
+		// 	window.addEventListener('load', function() {
+		// 		navigator.serviceWorker.register('/sw.js');
+		// 	});
+		// }
+	</script>
+
+
+	<meta name="theme-color" content="#color">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<meta name="author" content="PT. Pegadaian (Persero)">
+	<meta name="description" content="Menjadi The Most Valuable Financial Company di Indonesia dan Sebagai Agen Inklusi Keuangan Pilihan Utama Masyarakat">
+	<meta name="keywords" content="gadai, emas, pembiayaan, syariah, jasa, bisnis, fidusia, persero, PT, Pegadaian">
+	<meta name="copyright" content="PT. Pegadaian (Persero) 2020">
+
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="x-rim-auto-match" content="none">
+	<!-- <link rel="icon" href="favicon.ico">-->
+	<!-- Favicons -->
+	<link rel="apple-touch-icon-precomposed" href="https://www.pegadaian.co.id/assets/images/apple-touch-icon.png">
+	<link rel="shortcut icon" type="image/ico" href="https://www.pegadaian.co.id/assets/images/favicon-new.ico" />
+	<title>Pegadaian</title>
+
+	<!-- STYLESHEETS -->
+	<link href="https://www.pegadaian.co.id/assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="https://www.pegadaian.co.id/assets/lib/magnific/magnific-popup.css" rel="stylesheet" />
+	<link href="https://www.pegadaian.co.id/assets/frontend/css/carousel.css" rel="stylesheet" />
+	<link href="https://www.pegadaian.co.id/assets/frontend/css/ts.css" rel="stylesheet" />
+
+	<!-- 	<link href="https://www.pegadaian.co.id/assets/frontend/css/custom-2.css" rel="stylesheet" /> -->
+	<link href="https://www.pegadaian.co.id/assets/frontend/css/tipografi.css" rel="stylesheet" />
+	<link href="https://www.pegadaian.co.id/assets/frontend/css/icons.css" rel="stylesheet" />
+	<link href="https://www.pegadaian.co.id/assets/lib/fontawesome/css/fontawesome-all.min.css" rel="stylesheet" />
+	<link href="https://www.pegadaian.co.id/assets/frontend/css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+	<link href="https://www.pegadaian.co.id/assets/frontend/css/berita.css" rel="stylesheet" />
+	<link href="https://www.pegadaian.co.id/assets/frontend/css/animate.css" rel="stylesheet" />
+	<link href="https://www.pegadaian.co.id/assets/frontend/css/sky-forms.css" rel="stylesheet" />
+	<link href="https://www.pegadaian.co.id/assets/frontend/css/jquery-ui.css" rel="stylesheet" />
+	<link href="https://www.pegadaian.co.id/assets/frontend/css/jquery-ui-aje.css" rel="stylesheet" />
+	<link href="https://www.pegadaian.co.id/assets/frontend/css/custom-date-picker.css" rel="stylesheet" />
+	<link href="https://www.pegadaian.co.id/assets/frontend/css/animate.css" rel="stylesheet" />
+	<link href="https://www.pegadaian.co.id/assets/frontend/css/file-explore.css" rel="stylesheet" />
+	<link href="https://www.pegadaian.co.id/assets/frontend/css/defaults.min.css" rel="stylesheet" />
+	<link href="https://www.pegadaian.co.id/assets/frontend/css/nav-core.min.css" rel="stylesheet" />
+	<link href="https://www.pegadaian.co.id/assets/frontend/css/nav-layout.min.css" rel="stylesheet" />
+	<link href="https://www.pegadaian.co.id/assets/frontend/css/bootstrap-sweetalert/sweetalert.css" rel="stylesheet" type="text/css" />
+	<!-- CSS TAMBAHAN DR AGUS -->
+
+	<link href="https://www.pegadaian.co.id/assets/frontend/css/style.css" rel="stylesheet" />
+	<link href="https://www.pegadaian.co.id/assets/frontend/css/custom.css" rel="stylesheet" />
+	<link href="https://www.pegadaian.co.id/assets/frontend/css/popover.css" rel="stylesheet" />
+	<link href="https://www.pegadaian.co.id/assets/lib/adminto/plugins/bootstrap-daterangepicker/daterangepickerv2.css" rel="stylesheet" />
+	<!-- END of STYLESHEETS -->
+
+	
+					<!-- Global site tag (gtag.js) - Google Analytics -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131011500-1"></script>
+			<script>
+				window.dataLayer = window.dataLayer || [];
+
+				function gtag() {
+					dataLayer.push(arguments);
+				}
+				gtag('js', new Date());
+
+				gtag('config', 'UA-131011500-1');
+			</script>
+		
+		<script>
+		function loadWebPush() {
+			if ('safari' in window && 'pushNotification' in window.safari) {
+				var permissionData = window.safari.pushNotification.permission('');
+				checkRemotePermission(permissionData);
+
+			}
+			$("#safari-popup").modal('hide');
+		}
+	</script>
+</head>
+
+<body>
+
+	<!-- HEADER -->
+	<div class="row d-sm-none my-xs-none d-md-none d-lg-block">
+	<nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+		<div class="bar-green-menu">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-4 col-md-3 col-sm-12 col-12"></div>
+					<div class="col-xl-4 col-md-5 col-sm-12 col-12">
+						<form action="https://www.pegadaian.co.id/search" method="post" class="gsa-search" autocomplete="on">
+							<div class="input-group custom-ig">
+								<input class="form-control" placeholder="Ketik di sini untuk pencarian" name="searchquery">
+								<div class="input-group-prepend">
+									<button class="btn btn-outline-white" type="submit"><i class="fa fa-search"></i></button>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-xl-4 col-md-4 col-sm-12 col-12 top-iconic-link">
+						<div class="language-switch float-right">
+							<ul class="languagepicker">
+																	<li><a href="https://www.pegadaian.co.id/id/"><img src="https://www.pegadaian.co.id/assets/frontend/img/icon/idn.png" />IDN</a></li>
+									<li><a href="https://www.pegadaian.co.id/en/"><img src="https://www.pegadaian.co.id/assets/frontend/img/icon/eng.png" />ENG</a></li>
+															</ul>
+						</div>
+						<ul class="triple-icon" compact="float-right">
+							<li class="partnership branch-triger">
+								<a href="https://partnership.pegadaian.co.id/" target="_blank" class="green-tooltip">
+									<img class="icon-patner" src="https://www.pegadaian.co.id/assets/frontend/img/icon/Icon-Partnership_25.png"/>
+								</a>
+								<p>Partnership</p>
+							</li>
+							<li class="branch-triger">
+								<a href="https://www.pegadaian.co.id/lokasi-cabang" class="green-tooltip">
+									<i class="fa fa-map-marker-alt"></i>
+									<!-- <span class="location-branch">Lokasi Cabang</span> -->
+								</a>
+								<p>Cabang</p>
+							</li>
+							<li class="procurement">
+								<a href="https://www.pegadaian.co.id/pengadaan">
+									<i class="fa fa-dolly-flatbed"></i>
+									<p>Pengadaan</p>
+								</a>
+							</li>
+							<li class="karir-triger">
+								<a href="https://www.pegadaian.co.id/karir">
+									<i class="fa fa-suitcase"></i>
+									<!-- <span class="tip-karir">Karir</span> -->
+								</a>
+								<p>Karir</p>
+							</li>
+							<li class="contact-triger">
+								<a href="https://www.pegadaian.co.id/hubungi-kami">
+									<i class="fa fa-paper-plane"></i>
+									<!-- <span class="tip-contact">Form Kontak</span> -->
+									<p>Kontak</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="image-sweaters"></div>
+		<div class="container">
+			<a class="navbar-brand2 navbar-brand-pegadaaian" href="https://www.pegadaian.co.id/"><img src="https://www.pegadaian.co.id/assets/frontend/img/layout/pegadaian-logo.png" class="img-fluid" alt="Logo Pegadaian" /></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse list-link-navigation" id="navbarsExampleDefault">
+				<ul class="navbar-nav ml-auto nav-at-right">
+                    <li class="nav-item">
+                        <a href="http://127.0.0.1:8000/" class="nav-link">Dashboard</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="http://127.0.0.1:8000/about" class="nav-link">About</a>
+                    </li>
+				</ul>
+				<!-- 				<div class="language-switch">
+					<ul class="languagepicker">
+											<li><a href="https://www.pegadaian.co.id/id/"><img src="https://www.pegadaian.co.id/assets/frontend/img/icon/idn.png"/>IDN</a></li>
+						<li><a href="https://www.pegadaian.co.id/en/"><img src="https://www.pegadaian.co.id/assets/frontend/img/icon/eng.png"/>ENG</a></li>
+										</ul>				
+				</div> -->
+				<!-- 				<div id="wrap">
+					<form action="" autocomplete="on">
+						<input id="search" name="search" type="text" placeholder="Cari"><input id="search_submit" value="Rechercher" type="submit">
+					</form>
+				</div> -->
+			</div>
+		</div><!-- tambahan div penutup by agus-->
+
+	</nav>
+</div>
+
+
+<!-- MOBILE MENU ONLY -->
+
+<header class="white-header">
+	<div class="d-lg-none d-xs-block d-sm-block d-md-block ">
+		<div class="languange-and-search">
+			<div id="wrap-mobile-search">
+				<form action="https://www.pegadaian.co.id/search" method="post">
+					<input id="search" name="searchquery" type="text" placeholder="Cari"><input id="search_submit" value="Rechercher" type="submit">
+				</form>
+			</div>
+			<div class="language-switch language-switch-mobile">
+				<ul class="languagepicker">
+											<li><a><img src="https://www.pegadaian.co.id/assets/frontend/img/icon/idn.png" />IDN</a></li>
+						<li><a href="https://www.pegadaian.co.id/en/"><img src="https://www.pegadaian.co.id/assets/frontend/img/icon/eng.png" />ENG</a></li>
+									</ul>
+			</div>
+			<div class="col-sm-6 col-12 top-iconic-link">
+				<ul class="triple-icon" compact="float-right">
+					<!-- 						<li class="branch-triger"><a href="https://www.pegadaian.co.id/lokasi-cabang" class="green-tooltip"><i class="fa fa-map-marker-alt"></i>&nbsp;<span class="location-branch">Lokasi Cabang</span></a></li>
+						<li class="karir-triger"><a href="https://www.pegadaian.co.id/karir"><i class="fa fa-suitcase"></i>&nbsp;<span class="tip-karir">Karir</span></a></a></li>		
+						<li class="contact-triger"><a href="https://www.pegadaian.co.id/hubungi-kami"><i class="fa fa-paper-plane"></i>&nbsp;<span class="tip-contact">Form Kontak</span></a></li> -->
+					<li class="partnership branch-triger">
+						<a href="https://partnership.pegadaian.co.id/" target="_blank" class="green-tooltip">
+							<img class="icon-patner" src="https://www.pegadaian.co.id/assets/frontend/img/icon/Icon-Partnership_25.png"/>
+						</a>
+						<p>Partnership</p>
+					</li>	
+					<li class="branch-triger">
+						<a href="https://www.pegadaian.co.id/lokasi-cabang" class="green-tooltip">
+							<i class="fa fa-map-marker-alt"></i>
+							<!-- <span class="location-branch">Lokasi Cabang</span> -->
+						</a>
+						<p>Cabang</p>
+					</li>
+					<li class="procurement">
+						<a href="#">
+							<i class="fa fa-dolly-flatbed"></i>
+							<p>Pengadaan</p>
+						</a>
+					</li>
+					<li class="karir-triger">
+						<a href="https://www.pegadaian.co.id/karir">
+							<i class="fa fa-suitcase"></i>
+							<!-- <span class="tip-karir">Karir</span> -->
+						</a>
+						<p>Karir</p>
+					</li>
+					<li class="contact-triger">
+						<a href="https://www.pegadaian.co.id/hubungi-kami">
+							<i class="fa fa-paper-plane"></i>
+							<!-- <span class="tip-contact">Form Kontak</span> -->
+							<p>Kontak</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+
+		</div>
+	</div>
+	<div class="d-lg-none d-xs-block d-sm-block d-md-block header-mobile">
+		<div class="mobile-logo-brand">
+			<a class="navbar-brand2 navbar-brand-pegadaaian" href="https://www.pegadaian.co.id/"><img src="https://www.pegadaian.co.id/assets/frontend/img/layout/pegadaian-logo.png" class="img-fluid" alt="Logo Pegadaian" /></a>
+		</div>
+		<a href="#" class="nav-button">
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+		<nav class="nav nav-mobile-navigation">
+			<ul>
+																	<li><a href="https://www.pegadaian.co.id/home"class="nav-link">Beranda</a></li>
+																							<li class="nav-submenu">
+								<a href="#">Profil</a>
+								<ul>
+																																<li><a href="https://www.pegadaian.co.id/profil/sejarah-perusahaan">Sejarah Pegadaian</a></li>
+																																											<li><a href="https://www.pegadaian.co.id/profil/visi-dan-misi">Visi dan Misi</a></li>
+																																											<li><a href="https://www.pegadaian.co.id/profil/budaya-perusahaan">Budaya Perusahaan</a></li>
+																																											<li><a href="https://www.pegadaian.co.id/profil/struktur-organisasi">Struktur Organisasi</a></li>
+																																											<li><a href="https://www.pegadaian.co.id/profil/struktur-kepemilikan">Struktur Kepemilikan</a></li>
+																																											<li><a href="https://www.pegadaian.co.id/profil/struktur-group-perusahaan">Struktur Grup Perusahaan</a></li>
+																																											<li><a href="https://www.pegadaian.co.id/profil/penghargaan">Penghargaan</a></li>
+																																											<li><a href="https://www.pegadaian.co.id/profil/dokumen-anggaran">Dokumen Anggaran Dasar</a></li>
+																																											<li><a href="https://www.pegadaian.co.id/profil/direksi">Direksi</a></li>
+																																											<li><a href="https://www.pegadaian.co.id/profil/dewan-komisaris">Dewan Komisaris</a></li>
+																																											<li><a href="https://www.pegadaian.co.id/profil/komite">Komite</a></li>
+																																											<li><a href="https://www.pegadaian.co.id/profil/sekretaris-perusahaan">Sekretaris Perusahaan</a></li>
+																												</ul>
+							</li>
+																							<li class="nav-submenu">
+								<a href="#">Produk</a>
+								<ul>
+																																<li class="nav-submenu">
+													<a href="#" class="second-nav-submenu">Produk Utama</a>
+													<ul>
+																														<li><a href="https://www.pegadaian.co.id/produk/kca">KCA</a></li>
+																														<li><a href="https://www.pegadaian.co.id/produk/krasida">Krasida </a></li>
+																														<li><a href="https://www.pegadaian.co.id/produk/kreasi">Kreasi</a></li>
+																														<li><a href="https://www.pegadaian.co.id/produk/gadai-efek">Gadai Efek</a></li>
+																											</ul>
+												</li>
+																																											<li class="nav-submenu">
+													<a href="#" class="second-nav-submenu">Produk Syariah</a>
+													<ul>
+																														<li><a href="https://www.pegadaian.co.id/produk/rahn">Rahn</a></li>
+																														<li><a href="https://www.pegadaian.co.id/produk/amanah">Amanah</a></li>
+																														<li><a href="https://www.pegadaian.co.id/produk/arrum">Arrum</a></li>
+																														<li><a href="https://www.pegadaian.co.id/produk/arrum-haji">Arrum Haji</a></li>
+																											</ul>
+												</li>
+																																											<li class="nav-submenu">
+													<a href="#" class="second-nav-submenu">Investasi Emas</a>
+													<ul>
+																														<li><a href="https://www.pegadaian.co.id/produk/mulia">Mulia</a></li>
+																														<li><a href="https://www.pegadaian.co.id/produk/tabungan-emas">Tabungan Emas</a></li>
+																														<li><a href="https://www.pegadaian.co.id/produk/konsinyasi-emas">Konsinyasi Emas</a></li>
+																											</ul>
+												</li>
+																																											<li class="nav-submenu">
+													<a href="#" class="second-nav-submenu">Produk Lainnya</a>
+													<ul>
+																														<li><a href="https://www.pegadaian.co.id/produk/pegadaian-remittance">Pegadaian Remittance</a></li>
+																														<li><a href="https://www.pegadaian.co.id/produk/multi-pembayaran-online">Multi Pembayaran Online</a></li>
+																														<li><a href="https://www.pegadaian.co.id/produk/persewaan-gedung">Persewaan Gedung</a></li>
+																														<li><a href="https://www.pegadaian.co.id/produk/jasa-sertifikasi-batu-mulia">Jasa Sertifikasi Batu Mulia</a></li>
+																														<li><a href="https://www.pegadaian.co.id/produk/jasa-taksiran">Jasa Taksiran</a></li>
+																														<li><a href="https://www.pegadaian.co.id/produk/jasa-titipan">Jasa Titipan</a></li>
+																											</ul>
+												</li>
+																																											<li class="nav-submenu">
+													<a href="#" class="second-nav-submenu">Partnership</a>
+													<ul>
+																														<li><a href="https://partnership.pegadaian.co.id/model/direct" target="blank">Direct</a></li>
+																														<li><a href="https://partnership.pegadaian.co.id/model/indirect" target="blank">Indirect</a></li>
+																											</ul>
+												</li>
+																												</ul>
+							</li>
+																							<li class="nav-submenu">
+								<a href="#">Tata Kelola</a>
+								<ul>
+																																<li><a href="https://www.pegadaian.co.id/tata-kelola/pedoman-kerja">Pedoman Kerja Direksi & Dewan Komisaris</a></li>
+																																											<li><a href="https://www.pegadaian.co.id/tata-kelola/informasi-pengangkatan-dan-pemberhentian-sekretaris-perusahaan">Pengangkatan & Pemberhentian Sekretaris Perusahaan</a></li>
+																																											<li><a href="https://www.pegadaian.co.id/tata-kelola/kode-etik">Kode Etik</a></li>
+																																											<li><a href="https://www.pegadaian.co.id/tata-kelola/informasi-pengangkatan-dan-pemberhentian-komite-audit">Pengangkatan dan Pemberhentian Anggota Komite Audit</a></li>
+																																											<li><a href="https://wbs.pegadaian.co.id/" target="blank">Sistem Pelaporan Pelanggaran</a></li>
+																																											<li><a href="https://www.pegadaian.co.id/tata-kelola/kebijakan-manajemen-resiko">Kebijakan Manajemen Resiko</a></li>
+																																											<li><a href="https://www.pegadaian.co.id/tata-kelola/kebijakan-anti-korupsi">Kebijakan Anti Korupsi</a></li>
+																																											<li><a href="https://www.pegadaian.co.id/tata-kelola/kebijakan-seleksi-pemasok-dan-hak-kreditur">Kebijakan Seleksi Pemasok</a></li>
+																																											<li><a href="https://www.pegadaian.co.id/tata-kelola/pedoman-gcg">Pedoman GCG</a></li>
+																																											<li><a href="https://www.pegadaian.co.id/tata-kelola/adaptasi-kebiasaan-baru">Adaptasi Kebiasaan Baru</a></li>
+																												</ul>
+							</li>
+																							<li class="nav-submenu">
+								<a href="#">Kinerja</a>
+								<ul>
+																																<li class="nav-submenu">
+													<a href="#" class="second-nav-submenu">Laporan Kinerja</a>
+													<ul>
+																														<li><a href="https://www.pegadaian.co.id/laporan-kinerja/laporan-tahunan">Laporan Tahunan</a></li>
+																														<li><a href="https://www.pegadaian.co.id/laporan-kinerja/laporan-keuangan">Laporan Keuangan</a></li>
+																											</ul>
+												</li>
+																												</ul>
+							</li>
+																							<li class="nav-submenu">
+								<a href="#">CSR Pegadaian</a>
+								<ul>
+																																<li><a href="https://www.pegadaian.co.id/tanggung-jawab-sosial/program-kemitraan">Program Kemitraan</a></li>
+																																											<li><a href="https://www.pegadaian.co.id/tanggung-jawab-sosial/bina-lingkungan">Bina Lingkungan</a></li>
+																																											<li><a href="https://www.pegadaian.co.id/tanggung-jawab-sosial/kesehatan-dan-keselamatan-kerja">Ketenagakerjaan, Kesehatan dan Keselamatan Kerja</a></li>
+																																											<li><a href="https://www.pegadaian.co.id/tanggung-jawab-sosial/lingkungan-hidup">Lingkungan Hidup</a></li>
+																																											<li><a href="https://www.pegadaian.co.id/tanggung-jawab-sosial/nasabah-produk-jasa-layanan">Nasabah/Produk/Jasa Layanan</a></li>
+																												</ul>
+							</li>
+																							<li><a href="https://www.pegadaian.co.id/berita"class="nav-link">Berita</a></li>
+																							<li class="nav-submenu">
+								<a href="#">PPID</a>
+								<ul>
+																																<li><a href="https://www.pegadaian.co.id/ppid/profil-ppid">Profil PPID</a></li>
+																																											<li><a href="https://www.pegadaian.co.id/ppid/tugas-dan-fungsi">Tugas dan Fungsi</a></li>
+																																											<li><a href="https://www.pegadaian.co.id/ppid/struktur-organisasi">Struktur Organisasi</a></li>
+																																											<li><a href="https://www.pegadaian.co.id/ppid/visi-dan-misi">Visi dan Misi</a></li>
+																																											<li><a href="https://www.pegadaian.co.id/ppid/maklumat-pelayanan-informasi-publik">Maklumat Pelayanan Informasi Publik</a></li>
+																																											<li><a href="https://www.pegadaian.co.id/ppid/tata-cara-permohonan-informasi">Tata Cara Permohonan Informasi</a></li>
+																																											<li><a href="https://www.pegadaian.co.id/ppid/tata-cara-pengajuan-keberatan">Tata Cara Pengajuan Keberatan</a></li>
+																																											<li><a href="https://www.pegadaian.co.id/ppid/tata-cara-pengajuan-penyelesaian-sengketa">Tata Cara Pengajuan Penyelesaian Sengketa</a></li>
+																																											<li><a href="https://www.pegadaian.co.id/ppid/regulasi-informasi-publik">Regulasi Informasi Publik</a></li>
+																												</ul>
+							</li>
+																							<li><a href="https://www.pegadaian.co.id/harga"class="nav-link">Harga Emas</a></li>
+													</ul>
+		</nav>
+		<a href="#" class="nav-close">Close Menu</a>
+	</div>
+</header>
+
+<!-- MOBILE MENU ONLY -->	<!-- END of HEADER -->
+
+	<!-- MAIN VIEW -->
+	<main role="main">
+		<div id="banner">
+			<div class="carousel carousel-homepage carousel-fade " id="carousel-homepage">
+				<ol class="carousel-indicators carousel-indicators--round">
+									<li class="active" data-slide-to="0" data-target="#carousel-homepage"></li>
+									<li class="" data-slide-to="1" data-target="#carousel-homepage"></li>
+									<li class="" data-slide-to="2" data-target="#carousel-homepage"></li>
+									<li class="" data-slide-to="3" data-target="#carousel-homepage"></li>
+									<li class="" data-slide-to="4" data-target="#carousel-homepage"></li>
+									<li class="" data-slide-to="5" data-target="#carousel-homepage"></li>
+									<li class="" data-slide-to="6" data-target="#carousel-homepage"></li>
+									<li class="" data-slide-to="7" data-target="#carousel-homepage"></li>
+									<li class="" data-slide-to="8" data-target="#carousel-homepage"></li>
+									<li class="" data-slide-to="9" data-target="#carousel-homepage"></li>
+									<li class="" data-slide-to="10" data-target="#carousel-homepage"></li>
+								</ol>
+				
+				<div role="listbox" class="carousel-inner">
+									<div class="carousel-item active" style="background-image: url(https://www.pegadaian.co.id/uploads/slides/c04a2507e372ca64fe6b0f8b24fc608a_thumb.jpg);">
+						<a href="http://bit.ly/MudahJelajahDunia" target="_blank" class="slider-link">
+							<div class="carousel-caption">
+								<h2><br></h2>							</div>					
+						</a>					
+					</div>
+									<div class="carousel-item " style="background-image: url(https://www.pegadaian.co.id/uploads/slides/6aee48f4d18c65bafaabad8bd46e5666_thumb.jpg);">
+						<a href="https://www.pegadaian.co.id/restrukturisasi" target="_blank" class="slider-link">
+							<div class="carousel-caption">
+								<h2><br></h2>							</div>					
+						</a>					
+					</div>
+									<div class="carousel-item " style="background-image: url(https://www.pegadaian.co.id/uploads/slides/a770f4050f5cec963631346806d9dcd5_thumb.jpg);">
+						<a href="https://www.pegadaian.co.id/produk/tabungan-emas" target="_blank" class="slider-link">
+							<div class="carousel-caption">
+								<h2><br></h2>							</div>					
+						</a>					
+					</div>
+									<div class="carousel-item " style="background-image: url(https://www.pegadaian.co.id/uploads/slides/cc253eaafb0b6eaf4c2e62a59c80148b_thumb.jpg);">
+						<a href="" target="_blank" class="slider-link">
+							<div class="carousel-caption">
+															</div>					
+						</a>					
+					</div>
+									<div class="carousel-item " style="background-image: url(https://www.pegadaian.co.id/uploads/slides/552c7b920438e36dadd0afba2b38b810_thumb.jpg);">
+						<a href="https://drive.google.com/open?id=1-oJ3-4PwcVlyOX7dM6sIdi1Q9s1DcPRs" target="_blank" class="slider-link">
+							<div class="carousel-caption">
+								<h2><font face="Calibri" size="5" color="008000">Mau ngopi sambil belanja emas ?</font>
+<font size="6" color="006400"><strong><br>YA.. DI THE GADE </strong></font>
+<br><font color="Black"><strong>True Coffee Pure Gold</strong></font></h2>							</div>					
+						</a>					
+					</div>
+									<div class="carousel-item " style="background-image: url(https://www.pegadaian.co.id/uploads/slides/6fb4e78dcd03fbb05b73623ebcd4f196_thumb.jpg);">
+						<a href="" target="_blank" class="slider-link">
+							<div class="carousel-caption">
+															</div>					
+						</a>					
+					</div>
+									<div class="carousel-item " style="background-image: url(https://www.pegadaian.co.id/uploads/slides/b5e23dd36f0762acc9940cc77d370e14_thumb.jpg);">
+						<a href="https://www.pegadaian.co.id/produk/gadai_efek" target="_blank" class="slider-link">
+							<div class="carousel-caption">
+															</div>					
+						</a>					
+					</div>
+									<div class="carousel-item " style="background-image: url(https://www.pegadaian.co.id/uploads/slides/9cce7a925a7f6335f973ce306cb1728a_thumb.jpg);">
+						<a href="https://digital.pegadaian.co.id/" target="_blank" class="slider-link">
+							<div class="carousel-caption">
+															</div>					
+						</a>					
+					</div>
+									<div class="carousel-item " style="background-image: url(https://www.pegadaian.co.id/uploads/slides/05f317e175c00271a3100577e0c9bd47_thumb.jpg);">
+						<a href="https://www.pegadaian.co.id/berita/detail/195/program-gadai-peduli-tetapkan-bunga-0-selama-3-bulan-kepada-5-juta-nasabah" target="_blank" class="slider-link">
+							<div class="carousel-caption">
+								<h2><br></h2>							</div>					
+						</a>					
+					</div>
+									<div class="carousel-item " style="background-image: url(https://www.pegadaian.co.id/uploads/slides/fdbc61df9d8737a5aed4fb27315df12f_thumb.jpg);">
+						<a href="https://partnership.pegadaian.co.id" target="_blank" class="slider-link">
+							<div class="carousel-caption">
+															</div>					
+						</a>					
+					</div>
+									<div class="carousel-item " style="background-image: url(https://www.pegadaian.co.id/uploads/slides/78491ff8445ea8fc624cfbb1e9be0241_thumb.jpg);">
+						<a href="http://bit.ly/MudahJelajahDunia" target="_blank" class="slider-link">
+							<div class="carousel-caption">
+															</div>					
+						</a>					
+					</div>
+								</div>
+				<a class="carousel-control-primary carousel-control-prev" href="#carousel-homepage" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon fa fa-angle-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-primary carousel-control-next" href="#carousel-homepage" role="button" data-slide="next">
+					<span class="carousel-control-next-icon fa fa-angle-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>	
+			</div>	
+		</div>
+		<div class="section-grey-home">
+			<div class="container"><!-- /container -->
+				<div class="row">
+					<div class="col-md-4 col-sm-4 col-xs-12"> 
+						<div class="login-pegadaian-digital">
+							<a href="https://digital.pegadaian.co.id/" target="_blank">
+								<img class="img-fluid" src="https://www.pegadaian.co.id/uploads/options/4330ee700df90cb0c9d735c4f8d28a0c_thumb.jpg" />							</a>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12"> 
+						<div class="video-content-home" style="min-height: 250px;">
+							<!-- <div class="youtube" id="3TlBVTwyIQg" src="https://www.pegadaian.co.id/uploads/options/6eb454d3a18c3771f20e7d58a7198e44_thumb.jpg"></div> -->
+													<div class="title-col-video-home">
+								<h3>Video</h3>
+								<!-- <a href="#"><span>Selengkapnya</span></a> -->
+							</div>
+							<div id="myvideolist" class="overflow-scroll-area-videos scrollvideo">
+															<div class="list-videos-home">
+									<a href="https://www.pegadaian.co.id/uploads/videos/904f01ee54567bb6b1b3ceda5403d0a3.mp4" target="_blank" data-toggle="modal" data-target="#modal-home-video">
+										<div class="left-thumb-videos">
+											<img class="img-fluid" src="https://www.pegadaian.co.id/uploads/videos/c3ac9f5bcead885ffd3f55e6e7add134_thumb.jpg" />										</div>
+										<div class="title-vdeos-home">
+											<p><p>Bersama Pegadaian (Official Song)</p><p><span style="font-size: 10px;">#JingleTransformasiPegadaian</span></p></p>
+										</div>
+									</a>
+								</div>
+															<div class="list-videos-home">
+									<a href="https://www.pegadaian.co.id/uploads/videos/ddf94d3eabff8349ebeb32353ecec00f.mp4" target="_blank" data-toggle="modal" data-target="#modal-home-video">
+										<div class="left-thumb-videos">
+											<img class="img-fluid" src="https://www.pegadaian.co.id/uploads/videos/c7338323a66e67a93d0f0c9dc901391f_thumb.jpg" />										</div>
+										<div class="title-vdeos-home">
+											<p><p>The Gade Clean and Gold</p><p><span style="font-size: 10px;">#UbahSampahMenjadiEmas</span></p><p><br></p></p>
+										</div>
+									</a>
+								</div>
+															<div class="list-videos-home">
+									<a href="https://www.pegadaian.co.id/uploads/videos/15d2316a7c326f7e8371087d7d1cd541.mp4" target="_blank" data-toggle="modal" data-target="#modal-home-video">
+										<div class="left-thumb-videos">
+											<img class="img-fluid" src="https://www.pegadaian.co.id/uploads/videos/48b771290ee4e4f3eb77ae24ce1cb8c4_thumb.jpg" />										</div>
+										<div class="title-vdeos-home">
+											<p><p>The Gade Village&nbsp;</p><p><span style="font-size: 10px;">#BalkondesBorobudur</span></p></p>
+										</div>
+									</a>
+								</div>
+															<div class="list-videos-home">
+									<a href="https://www.pegadaian.co.id/uploads/videos/c4c4008143c83e904ad562b46d4b9bae.mp4" target="_blank" data-toggle="modal" data-target="#modal-home-video">
+										<div class="left-thumb-videos">
+											<img class="img-fluid" src="https://www.pegadaian.co.id/uploads/videos/df29f57850cfc8c51700ca638f6a06d6_thumb.jpg" />										</div>
+										<div class="title-vdeos-home">
+											<p><p>Semangat Millenials</p><p><span style="font-size: 10px;">#SemangatEmas</span></p></p>
+										</div>
+									</a>
+								</div>
+															<div class="list-videos-home">
+									<a href="https://www.pegadaian.co.id/uploads/videos/a914f5f791d7e643ed0ff36ed4c57c36.mp4" target="_blank" data-toggle="modal" data-target="#modal-home-video">
+										<div class="left-thumb-videos">
+											<img class="img-fluid" src="https://www.pegadaian.co.id/uploads/videos/084e542f6c3c324b559136b99c9056a0_thumb.jpg" />										</div>
+										<div class="title-vdeos-home">
+											<p><p><span style="font-size: 14px;">Yuk Laporkan sebelum tgl 31 Maret 2019</span></p><p><span style="font-size: 10px;">#ELHKPN2019</span></p></p>
+										</div>
+									</a>
+								</div>
+								
+								<div class="d-sm-block d-md-none d-lg-none d-xl-none" style="height: 120px;width: 100%;"></div>						
+							</div>
+																			<div class="modal fade" id="modal-home-video">
+							<div class="modal-dialog modal-lg">
+								<div class="modal-content">
+			                        <div class="modal-header">
+			                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true" ><i class="fa fa-window-close"></i></button>
+			                        </div>								
+									<div class="modal-body">
+																			<video id="cartoonVideo" width="100%" height="480" controls autoplay>
+											<source id="cartoonVideoSource" src=""  type="video/mp4" />
+										</video>
+																		</div>
+								</div><!-- /.modal-content -->
+							</div><!-- /.modal-dialog -->
+						</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="wrapper-for-mb">
+							<nav class="nav-home">
+								<div class="nav nav-tabs nav-tab-home" id="nav-tab" role="tablist" style="font-size:12px">
+									<a class="nav-item nav-link active" id="nav-harga-emas-tab" data-toggle="tab" href="#nav-harga-emas" role="tab" aria-controls="nav-home" aria-selected="true">Harga Emas</a>
+									<a class="nav-item nav-link" id="nav-harga-buyback-tab" data-toggle="tab" href="#nav-harga-buyback" role="tab" aria-controls="nav-profile" aria-selected="false">Harga Beli</a>									
+									<a class="nav-item nav-link" id="nav-tabungan-emas-tab" data-toggle="tab" href="#nav-tabungan-emas" role="tab" aria-controls="nav-profile" aria-selected="false">Tabungan Emas</a>
+								</div>
+							</nav>
+							<div class="tab-content table-harga-home" id="nav-tabContent">
+								<div class="download-harga">
+																	<p>Update: 11 Nov 2020</p>
+																									<a href="harga">Selengkapnya</a>
+								</div>						
+								<div class="tab-pane fade show active" id="nav-harga-emas" role="tabpanel" aria-labelledby="nav-home-tab">
+									<div class="overflow-scroll-area-table mCustomScrollbar" data-mcs-theme="dark">
+										<table class="table table-striped table-harga-emas-home">
+											<thead>
+												<tr>
+													<th>Satuan</th>
+													<th>Cetakan Antam</th>
+													<th>Cetakan UBS</th>
+												</tr>
+											</thead>
+																					<tbody style="padding: 5px;color: #787878;font-size: 13.5px !important;font-family: 'Hind Vadodara', sans-serif;">
+																																																		<tr>
+															<td>0.5</td>
+															<td>Rp 0</td>
+															<td>Rp 514.000</td>
+														</tr>
+																																								<tr>
+															<td>1.0</td>
+															<td>Rp 0</td>
+															<td>Rp 952.000</td>
+														</tr>
+																																								<tr>
+															<td>1.06</td>
+															<td>Rp 0</td>
+															<td>Rp 0</td>
+														</tr>
+																																								<tr>
+															<td>2.0</td>
+															<td>Rp 1.972.000</td>
+															<td>Rp 1.883.000</td>
+														</tr>
+																																								<tr>
+															<td>2.5</td>
+															<td>Rp 0</td>
+															<td>Rp 0</td>
+														</tr>
+																																								<tr>
+															<td>2.13</td>
+															<td>Rp 0</td>
+															<td>Rp 0</td>
+														</tr>
+																																								<tr>
+															<td>3.0</td>
+															<td>Rp 2.904.000</td>
+															<td>Rp 0</td>
+														</tr>
+																																								<tr>
+															<td>4.0</td>
+															<td>Rp 0</td>
+															<td>Rp 0</td>
+														</tr>
+																																								<tr>
+															<td>4.25</td>
+															<td>Rp 0</td>
+															<td>Rp 0</td>
+														</tr>
+																																								<tr>
+															<td>5.0</td>
+															<td>Rp 4.864.000</td>
+															<td>Rp 4.563.000</td>
+														</tr>
+																																								<tr>
+															<td>10.0</td>
+															<td>Rp 9.682.000</td>
+															<td>Rp 9.125.000</td>
+														</tr>
+																																								<tr>
+															<td>20.0</td>
+															<td>Rp 0</td>
+															<td>Rp 0</td>
+														</tr>
+																																								<tr>
+															<td>25.0</td>
+															<td>Rp 23.988.000</td>
+															<td>Rp 22.463.000</td>
+														</tr>
+																																								<tr>
+															<td>50.0</td>
+															<td>Rp 48.050.000</td>
+															<td>Rp 45.173.000</td>
+														</tr>
+																																								<tr>
+															<td>100.0</td>
+															<td>Rp 96.137.000</td>
+															<td>Rp 90.376.000</td>
+														</tr>
+																																								<tr>
+															<td>250.0</td>
+															<td>Rp 237.794.000</td>
+															<td>Rp 224.679.000</td>
+														</tr>
+																																								<tr>
+															<td>500.0</td>
+															<td>Rp 475.868.000</td>
+															<td>Rp 449.268.000</td>
+														</tr>
+																																								<tr>
+															<td>1000.0</td>
+															<td>Rp 931.370.000</td>
+															<td>Rp 0</td>
+														</tr>
+																								
+																								</tbody>
+																				
+										</table>									
+									</div>
+								</div>
+
+								<div class="tab-pane fade" id="nav-harga-buyback" role="tabpanel" aria-labelledby="nav-profile-tab">
+									<div class="overflow-scroll-area-table mCustomScrollbar table-nobos-shadow" data-mcs-theme="dark">
+										<table class="table table-striped table-harga-emas-home">
+											<thead>
+												<tr>
+													<th>Cetakan Antam</th>
+													<th>Cetakan UBS</th>
+												</tr>
+											</thead>
+											<tbody>
+												<!--<tr><td><? // =c99_currency($buyback['ANTAM'])?></td><td><? //=c99_currency($buyback['UBS'])?></td></tr>-->
+												<tbody><tr><td>Rp -</td><td>Rp -</td></tr></tbody>
+											</tbody>
+										</table>					
+									</div>	
+								</div>
+								
+								<div class="tab-pane fade" id="nav-tabungan-emas" role="tabpanel" aria-labelledby="nav-profile-tab">
+									<div class="overflow-scroll-area-table mCustomScrollbar table-nobos-shadow" data-mcs-theme="dark">
+										<table class="table table-striped jual-beli">
+											<thead>
+												<tr>
+													<th>Harga Jual</th>
+													<th>Harga Beli</th>
+												</tr>
+											</thead>
+																																<tbody>
+												<tr>
+													<td>Rp 9.240</td>
+													<td>Rp 8.960</td>
+												</tr>
+											</tbody>
+																															</table>									
+									</div>	
+								</div>
+
+
+
+
+
+							</div>							
+						</div>
+					</div>
+				</div>
+			</div><!-- /container -->		
+		</div><!-- section-grey-home -->
+
+		<div class="section-white-home">
+
+			<div class="container">
+				<div id="pegadaian-link" class="carousel slide">
+					<div class="carousel-inner">
+																<div class="carousel-item active">
+							<div class="row justify-content-center">
+													<div class="col-sm-4 logo-other-side"><a href="https://labgemologi.pegadaian.co.id/" title="G-Lab" target="_blank"><img class="d-block" src="https://www.pegadaian.co.id/uploads/links_app/375fe4c07b5e3b7078be5960ebb4cf02_thumb.png" alt="G-Lab logo"></a></div>
+																							<div class="col-sm-4 logo-other-side"><a href="https://pesonna.co.id/" title="Pesonna Indonesia Jaya" target="_blank"><img class="d-block" src="https://www.pegadaian.co.id/uploads/links_app/d7ae474c58fb62ad555c9787b88e50f9_thumb.png" alt="Pesonna Indonesia Jaya logo"></a></div>
+																							<div class="col-sm-4 logo-other-side"><a href="https://www.galeri24.co.id/" title="Galeri 24" target="_blank"><img class="d-block" src="https://www.pegadaian.co.id/uploads/links_app/84f8d00dcb36915972ee8bf11f6e3f8e_thumb.png" alt="Galeri 24 logo"></a></div>
+												</div>
+						</div>
+																					<div class="carousel-item ">
+							<div class="row justify-content-center">
+													<div class="col-sm-4 logo-other-side"><a href="https://agen.pegadaian.co.id/" title="Agen Pegadaian" target="_blank"><img class="d-block" src="https://www.pegadaian.co.id/uploads/links_app/d775c941ae5b5621c17ad1461d77c7fe_thumb.png" alt="Agen Pegadaian logo"></a></div>
+																							<div class="col-sm-4 logo-other-side"><a href="https://eproc.pegadaian.co.id/" title="E-Procurement" target="_blank"><img class="d-block" src="https://www.pegadaian.co.id/uploads/links_app/2e3a6b04dd7b2c4899a7561657f876c1_thumb.png" alt="E-Procurement logo"></a></div>
+																							<div class="col-sm-4 logo-other-side"><a href="https://pegadaiansyariah.co.id/" title="Pegadaian Syariah" target="_blank"><img class="d-block" src="https://www.pegadaian.co.id/uploads/links_app/100ad06adc0cc8a6e59365f6f10a6da0_thumb.png" alt="Pegadaian Syariah logo"></a></div>
+												</div>
+						</div>
+																					<div class="carousel-item ">
+							<div class="row justify-content-center">
+													<div class="col-sm-4 logo-other-side"><a href="https://sahabatpegadaian.com/" title="Sahabat Pegadaian" target="_blank"><img class="d-block" src="https://www.pegadaian.co.id/uploads/links_app/58f4d250025a657491445129e8bf9fd8_thumb.png" alt="Sahabat Pegadaian logo"></a></div>
+																							<div class="col-sm-4 logo-other-side"><a href="http://optimajasa.co.id/" title="Pesonna Optima Jasa" target="_blank"><img class="d-block" src="https://www.pegadaian.co.id/uploads/links_app/91ee5be4ba7e043844064a0a609fd0b0_thumb.png" alt="Pesonna Optima Jasa logo"></a></div>
+																							<div class="col-sm-4 logo-other-side"><a href="https://partnership.pegadaian.co.id/" title="Partnership" target="_blank"><img class="d-block" src="https://www.pegadaian.co.id/uploads/links_app/3d18e65e7e331787accce71715925f9c_thumb.png" alt="Partnership logo"></a></div>
+												</div>
+						</div>
+															</div>
+
+										<div class="carousel-control-logo">
+						<a class="carousel-control-prev" href="#pegadaian-link" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon fa fa-angle-left" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#pegadaian-link" role="button" data-slide="next">
+							<span class="carousel-control-next-icon fa fa-angle-right" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>            	
+					</div>
+									</div>
+			</div>
+			
+		</div>
+	</main>
+	<style type="text/css">
+		#html5-watermark{
+			display: none!important;
+		}
+	</style>	<!-- END of MAIN VIEW -->
+
+	<!-- FOOTER -->
+	<footer>
+	<div class="container">
+		<div class="row margin-bottom-40 wow fadeInUp">
+			<div class="col-xl-3 col-lg-4 col-md-4 diawasi">
+				<!-- <ul class="list-unstyled">
+					<li class="logo-logo"><a href="#"><img width="300" src="https://www.pegadaian.co.id/assets/frontend/img/layout/logo-bumn.png" class="img-fluid"></a>
+					</li>
+				</ul> -->
+				<p class="margin-0">Terdaftar dan Diawasi Oleh:</p>
+				<ul class="list-unstyled margin-top-20">					
+					<li class="logo-logo"><img width="300" class="floating-logo" src="https://www.pegadaian.co.id/assets/frontend/img/layout/logo-ojk.png"></li>
+					</li>
+				</ul>
+			</div>
+
+			<div class="col-xl-6 col-lg-4 col-md-4 col-sm-12 col-12 mb-lg-0 mb-md-5 mb-5">
+				<div class="title-footer-label mb-0">
+					<h4 class=" h-green" style="margin: 0 0 13px 0;">QUICK <span>LINKS</span></h4>
+				</div>
+				<div class="row">
+					<div class="col-xl-4 col-lg-4 col-md-6 col-sm-4 col-6">
+						
+						<ul class="list-unstyled text-small ">
+													<li><a href="https://www.pegadaian.co.id/syarat-dan-ketentuan">Syarat &amp; Ketentuan</a></li>
+													<li><a href="https://www.pegadaian.co.id/kebijakan-privasi">Kebijakan Privasi</a></li>
+													<li><a href="https://www.pegadaian.co.id/pengadaan">Pengadaan</a></li>
+													<li><a href="https://wbs.pegadaian.co.id/" target="blank">Pelaporan Pelanggaran</a></li>
+												</ul>					
+						
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-6 col-sm-4 col-6">
+						<ul class= "list-unstyled text-small ">
+													<li><a href="https://www.pegadaian.co.id/karir">Karir</a></li>
+													<li><a href="https://www.pegadaian.co.id/faq">FAQ</a></li>
+													<li><a href="https://www.pegadaian.co.id/lokasi-cabang">Lokasi Cabang</a></li>
+													<li><a href="https://www.pegadaian.co.id/sitemap">Sitemap</a></li>
+												</ul>
+					</div> 
+					<div class="col-xl-4 col-lg-4 col-md-6 col-sm-4 col-6">
+						<ul class= "list-unstyled text-small ">
+													<li><a href="https://partnership.pegadaian.co.id" target="blank">Partnership</a></li>
+												</ul>
+					</div> 
+				</div>
+			</div>
+
+			
+			<div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12" style="font-weight: bold;">
+				<div class="title-footer-label">
+					<!-- <a href="https://www.pegadaian.co.id/hubungi-kami" class="float-right small-text green-link">DETAIL KONTAK</a> -->
+					<h4 class="margin-bottom-10 h-green">HUBUNGI <span>KAMI</span></h4> 
+					
+					<div class="alamat">
+						<i class="fa fa-map-marker" style="margin: 12px 0 0 0;"></i>
+						<div style="margin-left: 30px;"><p>Kantor Pusat: Jl. Kramat Raya 162 Jakarta Pusat <br>10430 INDONESIA</p></div>
+						
+						<i class="fa fa-envelope"></i>
+						<div style="margin-left: 30px;"><a href="https://www.pegadaian.co.id/hubungi-kami" class="green-link">Form Kontak</a></div>
+						
+						<!-- <div style="margin-left: 30px;"><a href="#" class="green-link">1500569</a></div> -->
+						
+						<div style="margin-left: 30px;"><span class="not-green-link"><i class="fa fa-phone" style="margin-left:-32px;"></i>0213155550 </span><i class="fa fa-fax" style="margin-left:12px;"></i><span class="not-green-link" style="padding-left: 36px;">02180635162</span></div>
+					</div>
+					<div class="sosmed">
+						<div align="center" class="socialbtns">
+							<ul>
+							<li><a href="https://www.facebook.com/PegadaianPersero" target="_blank" class="fab fa-facebook-f facebook-footer"></a></li>
+							<li><a href="https://twitter.com/Pegadaian" target="_blank"  class="fab fa-twitter twitter-footer"></a></li>
+							<li><a href="https://plus.google.com/116958371712954570111" target="_blank"  class="fab fa-google google-footer"></a></li>
+							<li><a href="https://www.instagram.com/pegadaian_id/" target="_blank"  class="fab fa-instagram instagram-footer"></a></li>
+							<li><a href="https://www.youtube.com/channel/UC_acigZTCXTQuXL-3hqm6Gg" target="_blank"  class="fab fa-youtube youtube-footer"></a></li>
+							</ul>
+							<div class="call-center-footer">
+								<img src="https://www.pegadaian.co.id/assets/frontend/img/layout/pegadaian-call.png" class="img-fluid">
+							</div>
+						</div>			
+					</div>					
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="copyright">
+			<p>Copyright &copy; 2020 PT. Pegadaian - Persero. All Rights Reserved.</p>
+
+		</div>
+</div>
+	</footer>	<!-- END of FOOTER -->
+
+	<!-- IOS PWA Popover --->
+	<div id="popover" style="position: fixed;
+    top: 83vh;
+    width: 10px;
+    height: 10px;
+	left: 45%;"></div>
+	<div id="popover-content-install-webapp" class="hide">
+		<div class="icon-boxed"><i class="ion-ios7-plus-empty"></i></div>
+		<div class="text-content">Install this webapp on Your iPhone: tap <i class="ion-ios7-upload-outline"></i> and then Add to homescreen.</div>
+	</div>
+	<!-- /IOS PWA Popover -->
+
+
+	<!-- safari push popover -->
+	<!-- Modal -->
+	<div id="safari-popup" class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Info</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					Pegadaian ingin mengirimkan anda notifikasi berupa update harga emas terbaru dan berita terbaru.
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Tolak</button>
+					<button type="button" class="btn btn-primary" onclick="loadWebPush()">Izinkan</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--/safari push popover -->
+
+
+	<!-- JAVASCRIPTS -->
+	<script src="https://www.pegadaian.co.id/assets/lib/jquery/jquery-3.3.1.min.js"></script>
+	<script src="https://www.pegadaian.co.id/assets/lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="https://www.pegadaian.co.id/assets/frontend/js/start.js"></script>
+	<script src="https://www.pegadaian.co.id/assets/frontend/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="https://www.pegadaian.co.id/assets/frontend/js/slick/slick.min.js"></script>
+	<!-- <script src="https://codegena.com/assets/js/youtube-embed.js"></script> -->
+	<script src="https://www.pegadaian.co.id/assets/frontend/js/jquery-ui.js"></script>
+	<script src="https://www.pegadaian.co.id/assets/frontend/js/jquery.ui.touch-punch.min.js"></script>
+	<script src="https://www.pegadaian.co.id/assets/frontend/js/jquery.form.min.js"></script>
+	<script src="https://www.pegadaian.co.id/assets/frontend/js/jquery.validate.min.js"></script>
+	<script src="https://www.pegadaian.co.id/assets/frontend/js/jquery.blockUI.js"></script>
+	<script src="https://www.pegadaian.co.id/assets/frontend/js/jquery.maskedinput.min.js"></script>
+	<script src="https://www.pegadaian.co.id/assets/frontend/js/wow.min.js"></script>
+	<script src="https://www.pegadaian.co.id/assets/frontend/js/theme.js"></script>
+	<script src="https://www.pegadaian.co.id/assets/frontend/js/file-explore.js"></script>
+	<script src="https://www.pegadaian.co.id/assets/frontend/css/bootstrap-sweetalert/sweetalert.min.js" type="text/javascript"></script>
+	<script src="https://www.pegadaian.co.id/assets/frontend/wizard/multi-form.js?v2" type="text/javascript"></script>
+
+	<!-- DARI AGUS -->
+	<!--[if lt IE 9]>
+    <link rel="stylesheet" href="css/ie8-core.min.css">
+    <link rel="stylesheet" href="css/ie8-layout.min.css">
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+	<script src="https://www.pegadaian.co.id/assets/frontend/js/rem.min.js"></script>
+	<script src="https://www.pegadaian.co.id/assets/frontend/js/nav.jquery.min.js"></script>
+	<script>
+		$('.nav').nav();
+	</script>
+
+	<script src="https://www.pegadaian.co.id/assets/frontend/js/fa-v4-shims.js"></script>
+	<script src="https://www.pegadaian.co.id/assets/lib/magnific/jquery.magnific-popup.min.js"></script>
+
+	<!-- <script type="text/javascript" src="https://www.pegadaian.co.id/assets/frontend/js/jquery.js"></script> -->
+	<!--<script type="text/javascript" src="https://www.pegadaian.co.id/assets/frontend/js/html5lightbox.js"></script>-->
+	<script src="https://www.pegadaian.co.id/assets/frontend/js/main.js"></script>
+	<!-- END of JAVASCRIPTS -->
+
+
+			<script>
+			window.fbAsyncInit = function() {
+				FB.init({
+					appId: '1793617564278898',
+					autoLogAppEvents: true,
+					xfbml: true,
+					version: 'v3.1'
+				});
+			};
+
+			(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) {
+					return;
+				}
+				js = d.createElement(s);
+				js.id = id;
+				js.src = "https://connect.facebook.net/en_US/sdk.js";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+	
+
+	<!--PWA & FCM-->
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
+
+
+	<script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-analytics.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-messaging.js"></script>
+
+	<script>
+		// Your web app's Firebase configuration
+		var firebaseConfig = {
+			apiKey: 'AIzaSyA_wSiZurJEQx501W4ehixf0aALDxHTEYQ',
+			authDomain: 'ameetawebcorporate.firebaseapp.com',
+			databaseURL: 'https://ameetawebcorporate.firebaseio.com',
+			projectId: 'ameetawebcorporate',
+			storageBucket: 'ameetawebcorporate.appspot.com',
+			messagingSenderId: '486633583268',
+			appId: '1:486633583268:web:836a145d7e58378ae6ac31',
+			measurementId: 'G-ZX2DSW20CY'
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+		firebase.analytics();
+	</script>
+	<script>
+		var requestPermission = function() {
+			// [START request_permission]
+			Notification.requestPermission().then(permission => {
+				if (permission === "granted") {
+					console.log("Notification permission granted.");
+				} else {
+					console.log("Unable to get permission to notify.");
+				}
+			});
+			// [END request_permission]
+		}
+	</script>
+	<script>
+		const messaging = firebase.messaging();
+		messaging.usePublicVapidKey(
+			"BBDEEfXM3aRVODwGPjdeLkXvTsoYA5d3dYY6YPw8FFEQ1lYGQ9ekvHt2ZxjHT3i1iQxhTiM82ebjDN9a-ine2yE"
+		);
+
+		messaging.onTokenRefresh(() => {
+			messaging
+				.getToken()
+				.then(refreshedToken => {
+					console.log("Token refreshed.", refreshedToken);
+				})
+				.catch(err => {
+					console.log("Unable to retrieve refreshed token ", err);
+					showToken("Unable to retrieve refreshed token ", err);
+				});
+		});
+
+		requestPermission();
+		messaging
+			.getToken()
+			.then(currentToken => {
+				if (currentToken) {
+					$.ajax({
+						url: '/pushnotif/subscribe',
+						type: 'post',
+						dataType: 'json',
+						contentType: 'application/json',
+						success: function(data) {
+
+						},
+						data: JSON.stringify({
+							device_id: currentToken
+						})
+					});
+				} else {
+					requestPermission();
+				}
+			})
+			.catch(err => {
+				console.log("An error occurred while retrieving token. ", err);
+				requestPermission();
+
+			});
+	</script>
+	<!--pwa code here -->
+
+	<script>
+		var platform = {};
+
+		function checkPlatform() {
+
+			// browser info and capability
+			var _ua = window.navigator.userAgent;
+
+			platform.isIDevice = (/iphone|ipod|ipad/i).test(_ua);
+			platform.isSamsung = /Samsung/i.test(_ua);
+			platform.isFireFox = /Firefox/i.test(_ua);
+			platform.isOpera = /opr/i.test(_ua);
+			platform.isEdge = /edg/i.test(_ua);
+
+			// Opera & FireFox only Trigger on Android
+			if (platform.isFireFox) {
+				platform.isFireFox = /android/i.test(_ua);
+			}
+
+			if (platform.isOpera) {
+				platform.isOpera = /android/i.test(_ua);
+			}
+
+			platform.isChromium = ("onbeforeinstallprompt" in window);
+			platform.isInWebAppiOS = (window.navigator.standalone === true);
+			platform.isInWebAppChrome = (window.matchMedia('(display-mode: standalone)').matches);
+			platform.isMobileSafari = platform.isIDevice && _ua.indexOf('Safari') > -1 && _ua.indexOf('CriOS') < 0;
+			platform.isStandalone = platform.isInWebAppiOS || platform.isInWebAppChrome;
+			platform.isiPad = (platform.isMobileSafari && _ua.indexOf('iPad') > -1);
+			platform.isiPhone = (platform.isMobileSafari && _ua.indexOf('iPad') === -1);
+			platform.isCompatible = (platform.isChromium || platform.isMobileSafari ||
+				platform.isSamsung || platform.isFireFox || platform.isOpera);
+
+			console.log("platform.isiPhone: " + platform.isiPhone);
+			console.log("platform.isMobileSafari: " + platform.isMobileSafari);
+			console.log("platform.isInWebAppiOS: " + platform.isInWebAppiOS);
+			console.log("platform.isCompatible: " + platform.isCompatible);
+
+		}
+
+		checkPlatform();
+
+		if (platform.isiPad || platform.isMobileSafari || platform.isiPhone || platform.isInWebAppiOS) {
+			let n = localStorage.getItem("popup_count");
+			if (n === null) n = 0;
+			if (n === 0) {
+				$('#popover').popover({
+					html: true,
+					placement: 'top',
+					content: function() {
+						var id = $(this).attr('id')
+						return $('#popover-content-install-webapp').html();
+					}
+				});
+				$("#popover").popover("show");
+				$('.popover-dismiss').popover({
+					trigger: 'focus'
+				})
+				$(".popover-body").click(() => {
+					$("#popover").popover("hide");
+					localStorage.setItem("popup_count", 1);
+				})
+
+			}
+		}
+	</script>
+
+	<!--//PWA-->
+
+	<!-- safari push notification -->
+
+	<script>
+		var checkRemotePermission = function(permissionData) {
+			if (permissionData.permission === 'default') {
+				// This is a new web service URL and its validity is unknown.
+				window.safari.pushNotification.requestPermission(
+					'https://pwa.trimantek.com/push', // The web service URL.
+					'web.com.trimantek.pwa', // The Website Push ID.
+					{}, // Data that you choose to send to your server to help you identify the user.
+					checkRemotePermission // The callback function.
+				);
+			} else if (permissionData.permission === 'denied') {
+				// The user said no.
+				console.log("SAFARI PN DENIED");
+			} else if (permissionData.permission === 'granted') {
+				// The web service URL is a valid push provider, and the user said yes.
+				console.log("deviceToken: ", permissionData.deviceToken, " is now available to use");
+			}
+		};
+
+
+		if ('safari' in window && 'pushNotification' in window.safari) {
+			let safari_notif_display = localStorage.getItem('safari_notif_display')
+			if (safari_notif_display !== '1') {
+				$("#safari-popup").modal('show')
+			}
+			localStorage.setItem("safari_notif_display", 1);
+		}
+	</script>
+
+	<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+	<script>
+		$(document).ajaxStart($.blockUI).ajaxStop($.unblockUI);
+
+		var onloadCallback = function() {
+			grecaptcha.render('recaptcha', {
+				'sitekey': '6LfUXuoUAAAAADbof-5kVPAc8FT7QoYtqbQBsAmV'
+			});
+		}
+
+		function formatCurrency(obj) {
+			if (Number(obj.value)) {
+				var current = obj.value;
+				var after = current;
+			} else {
+				var current = obj.value.replace(/[\\A-Za-z!"?$%^&*+_={}; ()\:'/@#~?\<>?|`?\]\[]/g, '');
+				var after = current;
+			}
+
+			current = current.replace(/\,/g, "");
+			var decimalpoint = current.lastIndexOf(".");
+
+			var n;
+			var d;
+
+			if (decimalpoint >= 0) {
+				var f = current.split(".");
+				d = f[1];
+				n = f[0];
+			} else {
+				n = current;
+			}
+
+			var index = parseInt((n.length - 1) / 3);
+			if (index != 0) {
+				var prefixIndex = n.length - index * 3;
+				after = n.substr(0, prefixIndex) + "," + n.substr(prefixIndex, 3);
+				for (var i = 2; i <= index; i++) {
+					after += "," + n.substr(prefixIndex + 3 * (i - 1), 3);
+				}
+
+				if (decimalpoint >= 0) {
+					after += "." + d;
+				}
+			}
+			if (after < 0) {
+				after = after.replace(/\-/g, "");
+				after = '(' + after + ')';
+			}
+			obj.value = after;
+		}
+
+		$(document).ready(function() {
+			// stop playing while close modal
+			$('.modal').each(function() {
+				var src = $(this).find('iframe').attr('src');
+
+				$(this).on('click', function() {
+
+					$(this).find('iframe').attr('src', '');
+					$(this).find('iframe').attr('src', src);
+
+				});
+			});
+
+			$("#checkPinjaman").show();
+			$("#detailPinjaman").hide();
+
+			$.ajaxSetup({
+				data: {
+					'ci_csrf_token': ''
+				}
+			});
+
+			function number_format(number, decimals, dec_point, thousands_sep) {
+				number = (number + '')
+					.replace(/[^0-9+\-Ee.]/g, '');
+				var n = !isFinite(+number) ? 0 : +number,
+					prec = !isFinite(+decimals) ? 0 : Math.abs(decimals),
+					sep = (typeof thousands_sep === 'undefined') ? ',' : thousands_sep,
+					dec = (typeof dec_point === 'undefined') ? '.' : dec_point,
+					s = '',
+					toFixedFix = function(n, prec) {
+						var k = Math.pow(10, prec);
+						return '' + (Math.round(n * k) / k)
+							.toFixed(prec);
+					};
+				// Fix for IE parseFloat(0.55).toFixed(0) = 0;
+				s = (prec ? toFixedFix(n, prec) : '' + Math.round(n))
+					.split('.');
+				if (s[0].length > 3) {
+					s[0] = s[0].replace(/\B(?=(?:\d{3})+(?!\d))/g, sep);
+				}
+				if ((s[1] || '')
+					.length < prec) {
+					s[1] = s[1] || '';
+					s[1] += new Array(prec - s[1].length + 1)
+						.join('0');
+				}
+				return s.join(dec);
+			}
+
+			$('#formInput').validate({ // initialize the plugin
+				rules: {
+					no_akad: {
+						required: true,
+						number: true
+					},
+					no_ktp: {
+						required: true,
+						number: true
+					},
+					persetujuan: {
+						required: true,
+					}
+				},
+				messages: {
+					no_akad: {
+						required: "Harus di isi",
+					},
+					no_ktp: {
+						required: "Harus di isi",
+					},
+					persetujuan: {
+						required: " Harus di setujui",
+					}
+				},
+				submitHandler: function(form) {
+					var formData = new FormData(form);
+					if (grecaptcha.getResponse() == "") {
+						swal({
+							title: "Warning",
+							text: "Mohon isi Captcha",
+							timer: 4000,
+							showConfirmButton: false,
+							type: "warning"
+						});
+
+						setTimeout(function() {
+							location.reload();
+						}, 3000);
+					} else {
+						save(formData); // SUBMIT FORM
+					}
+				}
+			});
+
+			function save(formData) {
+				$.ajax({
+					url: 'restrukturisasi/restrukturisasi_cek',
+					data: formData,
+					type: 'POST',
+					dataType: 'json',
+					mimeType: "multipart/form-data",
+					contentType: false,
+					cache: false,
+					processData: false,
+					success: function(response) {
+						if (response.status == 'error') {
+							swal({
+								title: "Warning",
+								text: response.message,
+								timer: 4000,
+								showConfirmButton: false,
+								type: "warning"
+							});
+
+							setTimeout(function() {
+								location.reload();
+							}, 3000);
+						} else {
+							$('#nama_lengkap').val(response.data.namaNasabah);
+							$('#no_akad_kontrak').val(response.data.noKredit);
+							$('#produk_nama').val(response.data.productCode);
+							$('#tenor').val(response.data.tenor);
+							$('#up').val(number_format(response.data.up, '0', '.', ','));
+							$('#sisa_pinjaman').val(number_format(response.data.sisaPokok, '0', '.', ','));
+
+							$("#checkPinjaman").hide(1500);
+							$("#detailPinjaman").show(1500);
+
+						}
+					}
+				});
+			}
+
+			$('#notif').hide();
+			var val = {
+				// Specify validation rules
+				rules: {
+					profesi: {
+						required: true
+					},
+					pendapatanSebelumnya: {
+						required: true,
+					},
+					sektorUsaha: {
+						required: true
+					},
+					subSektorUsaha: {
+						required: true
+					},
+					tujuanPinjaman: {
+						required: true
+					},
+					aspekTerdampak: {
+						required: true
+					},
+					kondisiUsaha: {
+						required: true
+					},
+					pendapatanSaatIni: {
+						required: true,
+					},
+					pengeluaranPerBulan: {
+						required: true,
+					},
+					sumberPembayaranKredit: {
+						required: true
+					},
+					kondisiBarangJaminan: {
+						required: true
+					},
+					harapanRestruk: {
+						required: true
+					},
+					noHp: {
+						required: true,
+						digits: true
+					}
+				},
+				// Specify validation error messages
+				messages: {
+					profesi: {
+						required: ""
+					},
+					pendapatanSebelumnya: {
+						required: "Harus di isi"
+					},
+					pendapatanSaatIni: {
+						required: "Harus di isi"
+					},
+					pengeluaranPerBulan: {
+						required: "Harus di isi"
+					},
+					sumberPembayaranKredit: {
+						required: ""
+					},
+					kondisiBarangJaminan: {
+						required: ""
+					},
+					harapanRestruk: {
+						required: ""
+					},
+					sektorUsaha: {
+						required: ""
+					},
+					subSektorUsaha: {
+						required: ""
+					},
+					tujuanPinjaman: {
+						required: ""
+					},
+					aspekTerdampak: {
+						required: ""
+					},
+					kondisiUsaha: {
+						required: ""
+					},
+					noHp: {
+						required: "",
+						digits: "Hanya boleh angka"
+					}
+				}
+			}
+			$("#formDetailPinjaman").multiStepForm({
+				beforeSubmit: function(form, submit) {
+					console.log("called before submiting the form");
+				},
+				validations: val,
+			}).navigateTo(0);
+		})
+	</script>
+
+</body>
+
+</html>
